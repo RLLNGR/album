@@ -1,0 +1,31 @@
+body{
+   background: red;
+}
+
+h1{
+   color: blue;
+}
+
+ol{
+   background: black;
+}
+
+li{
+   background: red;
+}
+
+p{
+   color: orange;
+}
+
+a{
+   color: white;
+   text-decoration: none;
+}
+/* Ceci est un commentaire*/
+img{
+   width: 100%; /*largeur*/
+   height: 300px; /*hauteur*/
+   object-fit: cover;
+   /* object-fit: contain;*/
+}
