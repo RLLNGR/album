@@ -1,31 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+:root{
+   --toile-color: #e2001a;
+   --primary-color: #000;
+   --text-color: #fff;
+   --text-color-opacity: #aaaa96;
+}
+html{
+   margin: 0;
+   background: var(--toile-color);
+}
 body{
-   background: red;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   background: var(--primary-color);
+   color: var(--text-color);
+   margin: 0px;
+}
+
+h1, h4, h5{
+   font-family: impact;
+   color: white;
+   text-transform: uppercase; 
+}
+
+h1, h2{
+   margin: 0;
 }
 
 h1{
-   color: green;
+   font-size: 7.2vw;
+   line-height: normal;
+}
+
+h2{
+   font-weight: 100;
+}
+
+h4{
+   font-size: 1.6vmax;
+   font-weight: 400;
+   margin: 32px 0 16px 0;
+}
+
+h5{
+   text-align: center;
+   margin: 16px 0;
+   font-size: 2vmax;
+   transition: color .3s ease-in-out;
 }
 
 ol{
-   background: black;
+   padding-left: 24px;
+   font-size: 1.4vmax;
+   margin: 0;
 }
 
 li{
-   background: red;
+   margin: 4px 0;  
 }
 
-p{
-   color: orange;
+li i{
+   font-size: 1.2vmax;
+   font-weight: 100;
 }
 
 a{
-   color: white;
+   color: var(--text-color);
    text-decoration: none;
+   transition: all .3s ease-in-out;
 }
-/* Ceci est un commentaire*/
+
+a:hover{
+   color: #aaaa96;
+}
+
 img{
-   width: 100%; /*largeur*/
-   height: 300px; /*hauteur*/
-   object-fit: cover;
-   /* object-fit: contain;*/
+   border-radius: 2px;
+}
+
+/* ID & Classes */
+#id{
+   /* L'id est pour un élément unique ! On utilise son nom nom qu'une fois: . */
+}
+
+.class{
+   /* La class est utilisée quand on utilise plusieurs fois le même élément */
+}
+
+#header{
+   display: flex;
+   gap: 16px;
+   width: 100%;
+}
+
+#image{
+   position: sticky;
+   top: 0;
+   width: 50%;
+   height: 100%;
+}
+
+#image img{
+   width: 100%;
+   height: 100%;
+}
+
+#text{
+   padding: 32px;
+}
+
+#discographie{
+   display: flex;
+   flex-direction: column;
+   padding: 64px 32px;
+}
+
+#discographie h4{
+   font-size: 3.2vw;
+   text-align: center;
+}
+
+#other-albums{
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   gap: 24px;
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+.carte-album{
+   display: flex;
+   width: 32%;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+}
+
+.carte-album img{
+   width: 100%;
+   object-fit: contain;
+   filter: grayscale(100%) sepia(80%) contrast(1.1) saturate(.5);
+   transition: filter .6s ease-in-out;
+}
+.carte-album:hover img{
+   filter: grayscale(0%);
+}
+.carte-album:hover h5{
+   color: var(--text-color-opacity);
+}
+
+.carte-album a{
+   width: 100%;
+   height: 100%;
+}
+.carte-album h5{
+   width: 100%;
+   object-fit: contain;
+}
+
+
+
+header {
+  background-image: url('header.svg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 250px;
+}
+
+nav {
+  font-family: "Poppins", sans-serif;
+  background: var(--text-color);
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+nav li a {
+  font-weight: bold;
+  color: var(--primary-color);
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: var(--toile-color);
+}
+
+footer {
+  background: var(--toile-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 400;
+  padding: 10px;
 }

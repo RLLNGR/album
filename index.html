@@ -1,44 +1,106 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Drunk — Thundercat</title>
-   <link rel="stylesheet" href="style.css">
+   <head><!-- Partie invisible | C'est le cerveau, là où on fait toutes les connexions et chargement de fichier (CSS, libraries)-->
+      <meta charset="UTF-8"> <!-- C'est l'encryptage de l'écriture (si c'est une langue latine ou non) -->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- C'est des options d'affichage en fonctione de notre appareil -->
+      <meta name="description" content="Album de Thundercat "><!-- C'est la description pour les moteurs de recherche -->
+      <meta name="keywords" content="Music, Musique, Thundercat"><!-- Mots clés pour le référencement SEO -->
+      <meta name="author" content="Nicolas Rollinger"><!-- Auteur du site -->
+      <title>Drunk - Jukebox La Toile</title><!-- C'est le titre de la page / onglet -->
+      <link rel="icon" type="image/x-icon" href="https://latoile.em-lyon.com/files/2022/05/cropped-logo-latoilewidget-192x192.png"> <!-- C'est le favicon (petit logo) -->
+      <link rel="stylesheet" href="style.css"><!-- C'est le lien pour venir charger le CSS -->
+   </head>
 </head>
 <body>
-   <img src="cover.jpg" alt="Image de cover album">
-   <h1>Drunk</h1>
-   <h2>Thundercat</h2>
-
-   <p>Drunk is the third studio album by American musician Thundercat,[1] released on February 24, 2017, by Brainfeeder.[2] It features guest appearances from Kenny Loggins, Michael McDonald, Kendrick Lamar, Wiz Khalifa, Mac Miller, and Pharrell.[3] It was released nearly four years after his previous studio album, Apocalypse.</p>
-   <p>Drunk incorporates a range of stylistic influences, including funk, hip hop, jazz, pop, psychedelia, punk rock, R&B, soft rock, and soul.[4] The album received positive reviews from music critics.[5] A ChopNotSlop remix from OG Ron C, DJ Candlestick, & the Chopstars entitled Drank was released as a special edition purple vinyl record.</p>
-   
-   <h3>Tracklist</h3>
-   <ol>
-      <li>Rabbot Ho</li>
-      <li>Captain Stupido</li>
-      <li>Uh Uh</li>
-      <li>Bus in These Streets</li>
-      <li>A Fan's Mail (Tron Song Suite II)</li>
-      <li>Lava Lamp</li>
-      <li>Jethro</li>
-      <li>Day & Night</li>
-      <li>Show You the Way <i>featuring Michael McDonald and Kenny Loggins</i></li>
-      <li>Walk on By <i>featuring Kendrick Lamar</i></li>
-      <li>Blackkk</li>
-      <li>Tokyo</li>
-      <li>Jameel's Space Ride</li>
-      <li>Friend Zone</li>
-      <li><a href="https://www.youtube.com/watch?v=jBuKNkVFaMU">Them Changes</a></li>
-      <li>Where I'm Going</li>
-      <li>Drink Dat <i>featuring Wiz Khalifa</i></li>
-      <li>Inferno</li>
-      <li>I Am Crazy</li>
-      <li>Drunk</li>
-      <li>3AM</li>
-      <li>The Turn Down <i>featuring Pharrell</i></li>
-      <li>DUI</li>
-   </ol>
+   <header></header>
+   <nav>
+     <ul>
+       <li>
+         <a href="https://rllngr.github.io/La-Toile-Jukebox-Code-Makers/">accueil</a>
+       </li>
+       <li>
+         <a href="https://latoile.em-lyon.com/" target="_blank">formation</a>
+       </li>
+       <li>
+         <a href="https://em-lyon.com/" target="_blank">em lyon</a>
+       </li>
+     </ul>
+   </nav>
+   <div id="header">
+      <div id="image">
+         <img src="cover.jpg" alt="Thundercat drunk">
+      </div>
+      <div id="text">
+         <h1>Drunk</h1>
+         <!-- Nom de l'artiste --> 
+         <h2>Thundercat - 2017</h2>
+         <!-- Tracklist (liste des chansons de l'album)
+            1.
+            2.
+            3.
+            ... 
+         -->
+         <h4>Tracklist</h4>
+         <ol>
+            <li>Rabbot Ho</li>
+            <li>Captain Stupido</li>
+            <li>Uh Uh</li>
+            <li>Bus in These Streets</li>
+            <li>A Fan's Mail (Tron Song Suite II)</li>
+            <li>Lava Lamp</li>
+            <li>Jethro</li>
+            <li>Day & Night</li>
+            <li>Show You the Way <i>featuring Michael McDonald and Kenny Loggins</i></li>
+            <li>Walk on By <i>featuring Kendrick Lamar</i></li>
+            <li>Blackkk</li>
+            <li>Tokyo</li>
+            <li>Jameel's Space Ride</li>
+            <li>Friend Zone</li>
+            <li><a href="https://www.youtube.com/watch?v=jBuKNkVFaMU">Them Changes</a></li>
+            <li>Where I'm Going</li>
+            <li>Drink Dat <i>featuring Wiz Khalifa</i></li>
+            <li>Inferno</li>
+            <li>I Am Crazy</li>
+            <li>Drunk</li>
+            <li>3AM</li>
+            <li>The Turn Down <i>featuring Pharrell</i></li>
+            <li>DUI</li>
+         </ol>   
+       </div>
+    </div>
+   <div id="discographie">
+      <!-- Discographie (Autres albums de l'artiste (Cover + Titre)) -->
+      <h4>Autres albums</h4>
+      <ul id="other-albums">
+         <li class="carte-album">
+            <a href="#" target="_blank">
+               <img src="https://m.media-amazon.com/images/I/61NWhJs24aL._UF1000,1000_QL80_.jpg" alt="album cover">
+               <h5>The Golden Age of Apocalypse</h5>
+            </a>
+         </li>
+         <li class="carte-album">
+            <a href="#" target="_blank">
+               <img src="https://m.media-amazon.com/images/I/817wx9PUfeL._UF1000,1000_QL80_.jpg" alt="album cover">
+               <h5>Apocalypse</h5>
+            </a>
+         </li>
+         <li class="carte-album">
+            <a href="#" target="_blank">
+               <img src="https://i.scdn.co/image/ab67616d00001e021bce0a75e1a42451679ff587" alt="album cover">
+               <h5>Drank</h5>
+            </a>
+         </li>
+         <li class="carte-album">
+            <a href="#" target="_blank">
+               <img src="https://m.media-amazon.com/images/I/616DGD29eaL._UF1000,1000_QL80_.jpg" alt="album cover">
+               <h5>It is What it is</h5>
+            </a>
+         </li>
+      </ul>
+    </div>
+    <footer>
+      <p>©Warriors 2025</p>
+    </footer>
 </body>
 </html>
